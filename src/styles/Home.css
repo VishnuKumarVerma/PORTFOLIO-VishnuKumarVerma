@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+MX+Guides&family=Poppins&display=swap");
+
+.home_container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+  top: -60px;
+}
+
+.home_container .background-text {
+  position: absolute;
+  width: 100vw;
+  top: -25%;
+  left: 50%;
+  transform: translate(-50%, 150%) rotate(0deg);
+  font-size: 18rem;
+  color: rgba(255, 255, 255, 0.03);
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 1;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.left,
+.right {
+  position: relative;
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 20px;
+}
+
+.left span {
+  color: #56a589;
+}
+
+.left .role {
+  color: #56a589;
+  font-size: 27px;
+  padding-left: 5px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.left .greet {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.left .name {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.left .para {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 20px 0;
+}
+
+.home_links {
+  display: flex;
+  margin: 10px 0;
+}
+
+.home_links a {
+  text-decoration: none;
+  margin: 5px 10px;
+  font-size: 25px;
+}
+
+.home_container .home_links a:hover {
+  scale: 1.3;
+}
+
+.home_container .linkedin:hover {
+  color: #0077b5;
+}
+
+.home_container .discord:hover {
+  color: #5865f2;
+}
+
+.home_container button {
+  position: relative;
+  text-align: center;
+  width: 40%;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 7px 5px 13px rgba(175, 175, 175, 0.3);
+}
+
+.home_container button:hover {
+  background-color: white;
+  color: black;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+/* Mobile devices (portrait) */
+@media (max-width: 599px) {
+  .home_container .right {
+    display: none;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left .name {
+    font-size: 20px;
+  }
+
+  .home_container .cv_btn {
+    width: 100%;
+  }
+}
+
+/* Large mobile devices (landscape) */
+@media (min-width: 600px) and (max-width: 767px) {
+}
+
+/* Small tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Large tablets (landscape) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+}
+
+/* Desktops (small) */
+@media (min-width: 1280px) and (max-width: 1599px) {
+}
+
+/* Desktops (large) */
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 1025px) {
+  .home_container .background-text {
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  color: #fff;
+  font-size: 0.8em;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-container span {
+    color: #33d9bb;
+}
+
+.footer-container .home_links a:hover {
+  scale: 1.3;
+}
+
+.footer-container .linkedin:hover {
+  color: #0077b5;
+}
+
+.footer-container .discord:hover {
+  color: #5865f2;
+}
+
+@media (max-width: 429px) {
+  .footer-container {
+    font-size: 0.4rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .portfolio-container .portfolio-background-text {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  text-decoration: none;
+}
+
+::selection {
+  background: #159d728b;
+  color: rgb(255, 249, 249);
+  text-shadow: none;
+}
+
+body {
+  background: linear-gradient(45deg, #2c2c2c, #000000, #2c2c2c, #000000);
+}
+
+
+
